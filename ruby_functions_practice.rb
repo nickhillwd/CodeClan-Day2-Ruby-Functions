@@ -89,7 +89,7 @@ def age_in_years(dob)
   date_of_birth = Date.parse(dob)
   today = Date.today
   age = today.year - date_of_birth.year
-  if date_of_birth.month > today.month
+  if date_of_birth.day > today.day && date_of_birth.month > today.month
     age - 1
   else
     age
