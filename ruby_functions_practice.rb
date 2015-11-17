@@ -85,17 +85,20 @@ puts "Whats your date of birth? Year, Month, Day ____-__-__:"
 
 dob = gets.chomp
 
-def age_in_days
-  Date.today - Date.new
-end
-
 def age_in_years(dob)
   date_of_birth = Date.parse(dob)
   today = Date.today
   age = today.year - date_of_birth.year
+  if date_of_birth.month > today.month
+    age - 1
+  else
+    age
+  end
 end
 
-puts age_in_years(dob)
+puts "You are #{age_in_years(dob)} years old my friend!"
+
+puts "-----------------------------------------------"
 
 
 

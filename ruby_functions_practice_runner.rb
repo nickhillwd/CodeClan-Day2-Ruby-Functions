@@ -83,7 +83,7 @@ puts "night left untill xmas = #{nights_to_xmas}!! Ho Ho Ho!!!"
 
 ####Given a date of birth, calculate how old a person born on that date would be
 
-puts "Your age is #{age_in_years}"  
+  
 #Puts "You are years #{age_in_years} old"
 
 #### Create a command line interface using put, gets to interact with the your functions 
